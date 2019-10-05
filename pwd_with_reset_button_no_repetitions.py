@@ -15,7 +15,7 @@ def createPassword():
 
     for x in range(0, 3):
         piece2 += secrets.choice(string.digits.translate({ord(i): None for i in piece2}))
-
+sfdgagagaga:
     for x in range(0, 3):
         piece3 += secrets.choice(string.ascii_uppercase.translate({ord(i): None for i in t+piece3+piece1.upper()}))
 
