@@ -2,6 +2,6 @@ A simple random password generator with GUI, good for temporary password to be d
 
 Just run :
 
-     python3 pwd_with_reset_button_no_repetitions.py
+     python3 generate-pwd.py
      
 and it should work.
