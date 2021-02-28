@@ -6,23 +6,23 @@ def createPassword():
     import string
     import datetime
     x = datetime.datetime.now()
-    #piece1 = ''
-    #piece2 = ''
-    #piece3 = ''
+    piece1 = ''
+    piece2 = ''
+    piece3 = ''
 
-    #t = 'ioqxnmzvdbIOQXNMZVDB' # letters to exclude becuase difficult to pronounce and understand
+    t = 'ioqxnmzvdbIOQXNMZVDB' # letters to exclude becuase difficult to pronounce and understand
 
-    #for x in range(0, 3):
-    #    piece1 += secrets.choice(string.ascii_lowercase.translate({ord(i): None for i in t+piece1}))
+    for x in range(0, 3):
+        piece1 += secrets.choice(string.ascii_lowercase.translate({ord(i): None for i in t+piece1}))
 
-    #for x in range(0, 3):
-    #    piece2 += secrets.choice(string.digits.translate({ord(i): None for i in piece2}))
-    #for x in range(0, 3):
-    #    piece3 += secrets.choice(string.ascii_uppercase.translate({ord(i): None for i in t+piece3+piece1.upper()}))
+    for x in range(0, 3):
+        piece2 += secrets.choice(string.digits.translate({ord(i): None for i in piece2}))
+    for x in range(0, 3):
+        piece3 += secrets.choice(string.ascii_uppercase.translate({ord(i): None for i in t+piece3+piece1.upper()}))
 
-    #password = (piece1 + piece2 + piece3)
-    password = x.strftime("%a%Y%m%d")
-    #s = " ".join(repr(e) for e in password)
+    password = (piece1 + piece2 + piece3)
+    #password = x.strftime("%a%Y%m%d")
+    s = " ".join(repr(e) for e in password)
     e.delete(0, END)
     e.insert(0, password)
 	
