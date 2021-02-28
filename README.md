@@ -1,4 +1,4 @@
-A simple random password generator with GUI, good for temporary password to be dictated over the phone.
+A simple password generator with GUI, good for temporary passwords to be dictated over the phone.
 
 Just run :
 
